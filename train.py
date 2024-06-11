@@ -311,10 +311,7 @@ def main():
             'train': '.\dataset/Tweets_allennlp/train.json',
             'test': '.\dataset/Tweets_allennlp/test.json',
         },
-        'mams': {
-            'train': '.\dataset/MAMS/train_con_new.json',
-            'test': '.\dataset/dataset/MAMS/test_con_new.json',
-        }
+
     }
 
     input_cols = {
@@ -377,7 +374,7 @@ def main():
     parser.add_argument('--parsehead', default=False, action='store_true', help='dependency tree')
     parser.add_argument('--cuda', default='0', type=str)
     # * bert
-    parser.add_argument('--pretrained_bert_name', default='D:/file of he\\tools\\bert-base-uncased', type=str)
+    parser.add_argument('--pretrained_bert_name', default='bert-base-uncased', type=str)
     parser.add_argument("--adam_epsilon", default=1e-8, type=float, help="Epsilon for Adam optimizer.")
     parser.add_argument('--bert_dim', type=int, default=768)
     parser.add_argument('--bert_dropout', type=float, default=0.0, help='BERT dropout rate.')
